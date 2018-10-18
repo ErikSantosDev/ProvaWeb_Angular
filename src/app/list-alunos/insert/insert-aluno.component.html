@@ -1,11 +1,15 @@
-<form #aluno="ngForm" (ngSubmit)="onSubmit(aluno)">
-  <div class="form-group">
+<form class="container" #aluno="ngForm" (ngSubmit)="onSubmit(aluno)">
+  <div class="form-group col 12">
     <label>Nome</label>
     <input  class="form-control" name="nome"  ngModel >
   </div>
-  <div class="form-group">
+  <div class="form-group col 12">
     <label>RGA</label>
     <input type="number" class="form-control" name="rga" ngModel >
   </div>
-  <button type="submit" class="btn btn-primary">Submit</button>
+  <div class="row">
+    <div class="col">
+      <button type="submit" class="btn">Submit</button>
+   </div>
+  </div>
 </form>
